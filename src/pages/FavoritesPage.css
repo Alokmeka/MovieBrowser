@@ -1,0 +1,39 @@
+.favorites-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.no-favorites {
+  color: #999;
+  font-size: 1.2em;
+}
+
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.favorite-movie {
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.favorite-poster {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.favorite-title {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.favorite-year {
+  color: #666;
+  font-size: 0.9em;
+}
