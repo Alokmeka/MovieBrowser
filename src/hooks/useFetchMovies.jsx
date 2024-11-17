@@ -25,6 +25,14 @@ const useFetchMovies = (searchQuery, filters) => {
         },
       });
 
+      // Check for 401 status code
+      if (response.status === 401) {
+        console.warn("API limit reached. Try after some time.");
+        alert("Free API call has reached the limit. Try again later.");
+        return;
+      }
+
+      // Handle successful response
       if (response.status === 200 && response.data.Response === "True") {
         setMovies((prev) =>
           page === 1 ? response.data.Search : [...prev, ...response.data.Search]
